@@ -1,0 +1,11 @@
+<ul>
+{{#each controller}}
+  <li>
+    {{#link-to "users.show" this}}
+      {{fullName}}
+    {{/link-to}}
+  </li>
+{{/each}}
+</ul>
+
+{{outlet}}

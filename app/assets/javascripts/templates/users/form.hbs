@@ -1,0 +1,21 @@
+<h1>{{headerTitle}} {{fullName}}</h1>
+<form>
+  <fieldset>
+    <div>
+      <label {{bind-attr for="firstNameField.elementId"}}>First Name</label>
+      {{view Ember.TextField valueBinding='firstName' name='first_name' viewName='firstNameField'}}
+    </div>
+    <div>
+      <label {{bind-attr for='lastNameField.elementId'}}>Last Name</label>
+      {{view Ember.TextField valueBinding='lastName' name='last_name' viewName='lastNameField'}}
+    </div>
+    <div>
+      <label {{bind-attr for='emailField.elementId'}}>Email</label>
+      {{view Ember.TextField valueBinding='email' name='email' viewName='emailField'}}
+    </div>
+    <a href='#' {{action save}} class='btn btn-success'>{{buttonTitle}}</a>
+  </fieldset>
+</form>
+<div class='page-header'></div>
+
+<a href='#' {{action cancel target='controller'}} class='btn btn-inverse'>Cancel</a>
