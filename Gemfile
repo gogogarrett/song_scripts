@@ -20,7 +20,6 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'coffee-rails', '~> 4.0.1'
 gem 'bootstrap-sass', '~> 3.1.1.1'
 
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

@@ -1,0 +1,17 @@
+<h1>{{name}}</h1>
+<p>{{bio}}</p>
+
+
+{{#link-to 'artists'}}Back{{/link-to}}
+
+
+<h4>Songs</h4>
+<ul>
+{{#each song in songs}}
+  <li>
+    {{song.name}}
+    <br>
+    {{song.lyrics}}
+  </li>
+{{/each}}
+</ul>

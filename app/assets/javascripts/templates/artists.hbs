@@ -1,0 +1,11 @@
+<ul>
+{{#each controller}}
+  <li>
+    {{#link-to "artists.show" this}}
+      {{name}}
+    {{/link-to}}
+  </li>
+{{/each}}
+</ul>
+
+{{outlet}}
